@@ -1,40 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
     <title>RACHEL PRAJNA DUHITA</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .jumbotron {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 700px;
+        margin: 4rem auto;
+        text-align: center;
+      }
+      .jumbotron img {
+        width: 250px; /* diperbesar */
+        height: 250px; /* diperbesar */
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        color: black;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      p.lead {
+        font-size: 1.1rem;
+        color: black;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: white">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="tech.html">Technologies</a></li>
-            <li class="nav-item"><a class="nav-link" href="certificate.html">Certificate</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          </ul>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigasi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html" style="color: black">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" style="color: black">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="tech.html" style="color: black">Teknologi</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificate.html" style="color: black">Sertifikat</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html" style="color: black">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" style="color: black">Kontak</a></li>
+        </ul>
       </div>
     </nav>
     <!-- Akhir Navbar -->
 
-    <!-- Home Content -->
-    <section class="jumbotron text-center">
-      <img src="images/rachel.JPG" alt="Profile Picture" style="width: 20%" />
-      <h1 class="display-4">Hi 👋, My Name is RACHEL PRAJNA DUHITA</h1>
-      <p class="lead">Welcome to my website portofolio.</p>
+    <!-- Konten Beranda -->
+    <section class="jumbotron">
+      <img src="images/rachel.JPG" alt="Foto Profil Rachel Prajna Duhita" />
+      <h1>Halo! Saya Rachel Prajna Duhita</h1>
     </section>
-    <!-- Akhir Home Content -->
+    <!-- Akhir Konten Beranda -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>

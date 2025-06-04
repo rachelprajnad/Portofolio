@@ -1,125 +1,132 @@
-/* Container utama untuk tata letak */
+/* Reset default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container utama */
 .container {
-  max-width: 900px; /* Lebar konten yang sedikit lebih besar */
-  margin: 0 auto; /* Rata tengah secara horizontal */
+  max-width: 900px;
+  margin: 0 auto;
   padding: 2rem;
-  background-color: #ffffff; /* Warna latar belakang putih */
-  border-radius: 10px; /* Sudut melengkung */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk tampilan 3D */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling untuk Judul Besar */
+/* Judul besar */
 .container h2 {
-  font-size: 2rem; /* Perbesar ukuran font */
-  color: #000000; /* Warna teks hitam */
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 0.8rem;
   text-align: left;
-  border-bottom: 3px solid #000000; /* Garis bawah hitam */
-  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #000000;
+  padding-bottom: 0.3rem;
 }
 
-/* Styling untuk Sub-Bagian */
+/* Section */
 .section {
-  margin-bottom: 2.5rem; /* Jarak antar-seksi yang lebih besar */
+  margin-bottom: 2rem;
 }
 
 .section h3 {
-  font-size: 1.6rem; /* Ukuran font sedikit lebih besar */
-  color: #333333; /* Warna abu-abu gelap untuk sub-judul */
-  margin-bottom: 0.8rem;
-  text-transform: uppercase; /* Huruf kapital untuk penekanan */
+  font-size: 1.4rem;
+  color: #333333;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
 }
 
-/* Styling untuk daftar bullet */
+/* Daftar bullet */
 .section ul {
-  list-style-type: circle; /* Ubah bentuk bullet */
-  margin-left: 1.8rem;
-  padding-left: 0;
+  list-style-type: circle;
+  margin-left: 1.5rem;
+  margin-top: 0.2rem;
 }
 
 .section ul li {
-  margin-bottom: 0.6rem;
-  font-size: 1.2rem; /* Ukuran font yang lebih besar */
-  color: #555555; /* Warna abu-abu untuk teks */
-  line-height: 1.8; /* Spasi antar-baris yang lebih besar */
-  transition: color 0.3s ease; /* Efek transisi pada hover */
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.6;
+  transition: color 0.3s ease;
 }
 
 .section ul li:hover {
-  color: #000000; /* Warna berubah menjadi hitam saat di-hover */
+  color: #000000;
 }
 
-/* Styling untuk gambar ikon */
+/* Gambar ikon */
 .icon-container {
   display: flex;
-  gap: 1.5rem; /* Jarak antar gambar lebih besar */
+  gap: 1.2rem;
   margin-top: 0.5rem;
-  justify-content: center; /* Rata tengah gambar */
+  justify-content: center;
 }
 
 .icon-container img {
   width: 60px;
   height: auto;
-  border-radius: 8px; /* Sudut yang lebih halus */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Bayangan yang lebih lembut */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek animasi */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icon-container img:hover {
-  transform: scale(1.1); /* Perbesar saat di-hover */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat di-hover */
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling untuk informasi tambahan */
+/* Info tambahan */
 .additional-info {
-  margin-top: 1.5rem;
-  font-size: 1.2rem;
-  color: #444444; /* Warna abu-abu */
-  font-style: italic; /* Gaya huruf miring */
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #444444;
+  font-style: italic;
 }
 
-/* Styling untuk MIPA dan Kir Kapmi Workshop */
+/* MIPA dan Kir Kapmi */
 .mipa,
 .kir-kapmi {
-  font-size: 1.2rem;
-  color: #333333; /* Warna abu-abu gelap */
-  font-weight: bold; /* Tebalkan teks */
+  font-size: 1.1rem;
+  color: #333333;
+  font-weight: bold;
 }
 
-/* Styling untuk navbar */
+/* Navbar */
 .navbar {
-  background-color: #ffffff; /* Warna latar belakang putih */
-  padding: 0; /* Menghilangkan padding untuk menempelkan ke tepi */
+  background-color: #ffffff;
+  padding: 0;
   height: 60px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus di bawah */
-  display: flex; /* Menggunakan flexbox untuk menyusun item */
-  justify-content: flex-end; /* Menggeser menu ke kanan */
-  margin: 0; /* Menghilangkan margin */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
 }
 
-/* Styling untuk link dalam navbar */
+/* Link dalam navbar */
 .navbar-nav .nav-link {
-  color: #000000; /* Warna hitam */
-  padding: 0.5rem 1rem; /* Menyesuaikan padding untuk membuat tampilan rapi */
-  font-weight: 500; /* Tebalkan teks */
-  transition: color 0.3s ease; /* Efek transisi warna */
-  margin-left: 0; /* Menghilangkan margin di kiri */
+  color: #000000;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-left: 0;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #333333; /* Warna abu-abu saat di-hover */
+  color: #333333;
 }
 
-/* Styling untuk menu navigasi */
+/* Menu navigasi */
 .nav-menu {
-  font-size: 1rem; /* Ukuran font lebih besar */
-  color: #000000; /* Warna hitam */
+  font-size: 1rem;
+  color: #000000;
 }
 
-/* Responsif untuk layar lebih kecil */
+/* Responsif untuk layar kecil */
 @media (max-width: 768px) {
   .container {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .container h2 {
@@ -127,7 +134,7 @@
   }
 
   .section h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .section ul li {
@@ -140,10 +147,10 @@
 
   .navbar {
     height: 55px;
-    padding: 0; /* Menghilangkan padding pada navbar untuk lebih mepet */
+    padding: 0;
   }
 
   .navbar-nav .nav-link {
-    padding: 0.3rem 0.6rem; /* Mengurangi padding pada link */
+    padding: 0.3rem 0.6rem;
   }
 }

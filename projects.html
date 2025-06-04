@@ -1,71 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyek - Rachel Prajna Duhita</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <title>Projects - Rachel Prajna Duhita</title>
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .card {
+        border-radius: 12px;
+        transition: transform 0.2s ease-in-out;
+      }
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+      }
+      .card-img-top {
+        height: 180px;
+        object-fit: cover;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+      .btn-outline-primary {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .btn-outline-primary:hover {
+        background-color: #0d6efd;
+        color: white;
+      }
+      .card-title {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+      }
+      .text-muted {
+        font-size: 0.85rem;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: white">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-white">
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="tech.html">Technologies</a></li>
-            <li class="nav-item"><a class="nav-link" href="certificate.html">Certificate</a></li>
-            <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="tech.html">Teknologi</a></li>
+            <li class="nav-item"><a class="nav-link" href="certificate.html">Sertifikat</a></li>
+            <li class="nav-item"><a class="nav-link active" href="projects.html">Proyek</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Kontak</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End Navbar -->
+    <!-- Akhir Navbar -->
 
-    <!-- Content Projects -->
     <section class="container my-5">
-      <h2 class="mb-4">Projects</h2>
-      <div class="row">
-        <!-- Project 1: Katsu Kaze -->
-        <div class="col-md-6">
-          <div class="card mb-4 shadow-sm">
-            <img src="images/projects/katsu_kaze.jpg" class="card-img-top" alt="Katsu Kaze Website" />
-            <div class="card-body">
-              <h5 class="card-title">Katsu Kaze - Japanese Menu Website</h5>
-              <p class="card-text">Website for a Japanese restaurant featuring a modern and aesthetic UI design, built to showcase menu.</p>
-              <p class="text-muted">Tech Stack: HTML, CSS</p>
-              <a href="https://web-katsu-kaze.vercel.app/" class="btn btn-outline-primary me-2" target="_blank">Live Preview</a>
-              <a href="https://github.com/rachelprajnad/Tugas-Web-Katsu-Kaze.git" class="btn btn-outline-secondary" target="_blank"> <i class="fab fa-github"></i> View Code </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Sentiment Analysis Instagram -->
-        <div class="col-md-6">
-          <div class="card mb-4 shadow-sm">
-            <img src="images/projects/sentiment_instagram.jpg" class="card-img-top" alt="Instagram Sentiment Analysis" />
-            <div class="card-body">
-              <h5 class="card-title">Instagram App Sentiment Analysis</h5>
-              <p class="card-text">Web-based application to analyze public sentiment on Instagram app reviews using machine learning and data visualization.</p>
-              <p class="text-muted">Tech Stack: Python, Flask, Pandas, Scikit-Learn, HTML, CSS</p>
-              <a href="https://your-hosting-link-instagram-sentiment.com" class="btn btn-outline-primary me-2" target="_blank">Live Preview</a>
-              <a href="https://github.com/rachelprajnad/Analisis-sentimen.git" class="btn btn-outline-secondary" target="_blank"> <i class="fab fa-github"></i> View Code </a>
-            </div>
-          </div>
+  <div class="row g-4">
+    <!-- Proyek 1 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <img src="images/projects/katsu_kaze.jpg" class="card-img-top" alt="Website Katsu Kaze" />
+        <div class="card-body">
+          <h5 class="card-title">Katsu Kaze - Website Menu Jepang</h5>
+          <p class="card-text">Website untuk restoran Jepang dengan desain UI modern dan estetik.</p>
+          <p class="text-muted">Teknologi: HTML, CSS</p>
+          <a href="https://web-katsu-kaze.vercel.app/" class="btn btn-outline-primary me-2" target="_blank">Tampilan Langsung</a>
+          <a href="https://github.com/rachelprajnad/Tugas-Web-Katsu-Kaze.git" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github"></i> Lihat Kode</a>
         </div>
       </div>
-    </section>
-    <!-- End Content Projects -->
+    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+    <!-- Proyek 2 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <img src="images/projects/sentiment_instagram.jpg" class="card-img-top" alt="Analisis Sentimen Instagram" />
+        <div class="card-body">
+          <h5 class="card-title">Aplikasi Analisis Sentimen Instagram</h5>
+          <p class="card-text">Aplikasi web untuk analisis sentimen pada ulasan aplikasi Instagram.</p>
+          <p class="text-muted">Teknologi: Python, Streamlit, Pandas, Scikit-Learn</p>
+          <a href="https://youtu.be/5beqiruS2yI" class="btn btn-outline-primary me-2" target="_blank">Tampilan Langsung</a>
+          <a href="https://github.com/rachelprajnad/Analisis-sentimen.git" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github"></i> Lihat Kode</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyek 3 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <img src="images/projects/klinik_kucing.jpg" class="card-img-top" alt="Website Klinik Kucing" />
+        <div class="card-body">
+          <h5 class="card-title">Website Responsive Klinik Kucing</h5>
+          <p class="card-text">Website klinik kucing yang responsif untuk perangkat mobile dan desktop.</p>
+          <p class="text-muted">Teknologi: HTML, CSS, Bootstrap, JavaScript</p>
+          <a href="https://rachel-s-cat-care-clinic.vercel.app/" class="btn btn-outline-primary me-2" target="_blank">Tampilan Langsung</a>
+          <a href="https://github.com/rachelprajnad/Rachel-s-Cat-Care-Clinic.git" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github"></i> Lihat Kode</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyek 4 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <img src="images/projects/pemesanan_cake_flutter.jpg" class="card-img-top" alt="Pemesanan Cake Flutter" />
+        <div class="card-body">
+          <h5 class="card-title">Pemesanan Cake dengan Flutter</h5>
+          <p class="card-text">Aplikasi mobile untuk pemesanan cake yang interaktif dan modern.</p>
+          <p class="text-muted">Teknologi: Flutter, Dart</p>
+          <a href="https://drive.google.com/file/d/1QtKgvQGfg9k8c1B5lsRis5NyfxQTRNIf/view?usp=drivesdk" class="btn btn-outline-primary me-2" target="_blank">Download App</a>
+          <a href="https://github.com/rachelprajnad/Sweet-Bloom-Cake-Shop.git" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github"></i> Lihat Kode</a>
+        </div>
+      </div>
+    </div>
+<!-- Proyek 5 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <img src="images/projects/portofolio.jpg" class="card-img-top" alt="Portofolio Rachel Prajna Duhita" />
+        <div class="card-body">
+          <h5 class="card-title">Portofolio</h5>
+          <p class="card-text">Kumpulan karya dan proyek Rachel dalam bidang web development dan data science.</p>
+          <p class="text-muted">Teknologi: HTML, CSS, Bootstrap, JavaScript</p>
+            <a href="https://portofolio-nktc5sj19-rachelprajnads-projects.vercel.app/index.html" class="btn btn-outline-primary me-2" target="_blank">Tampilan Langsung</a>
+          <a href="https://github.com/rachelprajnad/Portofolio.git" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github"></i> Lihat Kode</a>
+        </div>
+        </div>
+    </div>
+
+    
+      <!-- Proyek 6 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <img src="images/projects/pemesanan_tiket_bioskop.jpg" class="card-img-top" alt="Pemesanan Tiket Bioskop" />
+        <div class="card-body">
+          <h5 class="card-title">Website Pemesanan Tiket Bioskop</h5>
+          <p class="card-text">Website dengan fitur CRUD lengkap untuk pemesanan tiket bioskop.</p>
+          <p class="text-muted">Teknologi: PHP, MySQL</p>
+          <a href="https://drive.google.com/file/d/1sMtNyvMhOA1bw58eqGOTGgI9GtnxhoWW/view?usp=sharing" class="btn btn-outline-primary me-2" target="_blank">Tampilan Langsung</a>
+          <a href="https://github.com/rachelprajnad/pemesanan-tiket-bioskop.git" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github"></i> Lihat Kode</a>
+        </div>
+      </div>
+    </div>
+
+   
+     <!-- Proyek 7 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <img src="images/projects/klasifikasi_ukt.jpg" class="card-img-top" alt="Klasifikasi Keringanan UKT" />
+        <div class="card-body">
+          <h5 class="card-title">Klasifikasi Kelayakan Keringanan UKT</h5>
+          <p class="card-text">Model klasifikasi untuk menentukan kelayakan keringanan UKT mahasiswa menggunakan algoritma machine learning.</p>
+          <p class="text-muted">Teknologi: Python, Sklearn</p>
+          <a href="https://drive.google.com/file/d/1V9LBF6qTh8amWOPoUOmjP72-IMj7GSdV/view?usp=sharing" class="btn btn-outline-primary me-2" target="_blank">Tampilan Langsung</a>
+          <a href="https://github.com/rachelprajnad/Klasifikasi-Keringanan-UKT.git" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github"></i> Lihat Kode</a>
+        </div>
+      </div>
+    </div>
+
+    
+     <!-- Proyek 8 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <img src="images/projects/analisis_tweet_ibm_watson.jpg" class="card-img-top" alt="Analisis Tweet IBM Watson NLU" />
+        <div class="card-body">
+          <h5 class="card-title">Analisis Ulang Data Tweet Kaggle dengan IBM Watson NLU</h5>
+          <p class="card-text">Analisis validasi dan evaluasi akurasi sentimen menggunakan IBM Watson Natural Language Understanding pada dataset tweet dari Kaggle.</p>
+          <p class="text-muted">Teknologi: Python, IBM Watson NLU, Kaggle Dataset</p>
+          <a href="https://drive.google.com/file/d/1mceStViWc02GzcjGU2cJiuBgvHepXseL/view?usp=sharing" class="btn btn-outline-primary me-2" target="_blank">Tampilan Langsung</a>
+          <a href="https://github.com/rachelprajnad/watsonNLUTweetProject.git" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github"></i> Lihat Kode</a>
+        </div>
+      </div>
+    </div> 
+    
+  </div>
+</section>

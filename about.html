@@ -1,147 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <title>About - Rachel Prajna Duhita</title>
+    <title>Tentang - Rachel Prajna Duhita</title>
+    <style>
+      /* CSS untuk membuat tanggal rata kanan */
+      .tanggal {
+        display: block;
+        text-align: right;
+        font-style: italic;
+        color: #555;
+        margin-top: 0.2rem;
+      }
+
+      /* Kecilkan ukuran teks umum */
+      body {
+        font-size: 14px;
+      }
+
+      /* Kecilkan ukuran heading */
+      h2 {
+        font-size: 1.5rem; /* default Bootstrap biasanya 2rem, ini lebih kecil */
+      }
+
+      h4 {
+        font-size: 1.2rem; /* default sekitar 1.5rem, ini lebih kecil */
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: white">
-      <div class="container">
+      
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="tech.html">Technologies</a></li>
-            <li class="nav-item"><a class="nav-link" href="certificate.html">Certificate</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="tech.html">Teknologi</a></li>
+            <li class="nav-item"><a class="nav-link" href="certificate.html">Sertifikat</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Proyek</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Kontak</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Akhir Navbar -->
 
-    <!-- Education -->
+    <!-- Tentang Saya -->
+    <section id="about-me" class="py-3">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Tentang Saya</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+              Mahasiswi Informatika di Universitas Teknologi Digital Indonesia dengan antusiasme tinggi dalam bidang teknologi, khususnya pengembangan frontend dan machine learning. Berpengalaman dalam merancang antarmuka pengguna (UI) yang
+              responsif serta membangun model prediktif berbasis data. Berhasil meraih Top 3 di program Studi Independen AI for Jobs berkat kontribusi aktif dan kemampuan kolaborasi tim. Berkomitmen untuk terus belajar, berkembang, dan
+              menghadirkan solusi teknologi yang inovatif serta adaptif sesuai kebutuhan industri.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Tentang Saya -->
+
+    <!-- Pendidikan -->
     <section id="education" class="py-3">
-      <!-- Ganti py-5 menjadi py-3 -->
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>Education</h2>
+            <h2>Pendidikan</h2>
           </div>
         </div>
-        
-            <ul>
-              <li>
-                <strong>Informatika</strong><br />
-                <span>Universitas Teknologi Digital Indonesia, Yogyakarta</span><br />
-                <span>2022 - Now</span>
-              </li>
-              <li>
-                <strong>MIPA</strong><br />
-                <span>MAN 1 Indramayu</span><br />
-                <span>2019 - Apr 2022</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <ul>
+          <li>
+            <strong>Informatika</strong><br />
+            Universitas Teknologi Digital Indonesia, Yogyakarta<br />
+            <span class="tanggal">2022 - Sekarang</span>
+          </li>
+        </ul>
       </div>
     </section>
-    <!-- Akhir Education -->
 
-    <!-- Organization -->
-    <section id="organization" class="py-3">
-      <!-- Ganti py-5 menjadi py-3 -->
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Organizational experience</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <ul>
-              <li>
-                <strong>KIR (Karya Ilmiah Remaja) MAN 1 Indramayu</strong><br />
-                <p>Member 2019-2021</p>
-                <img src="images/about/KIR.jpg" alt="Organizational Image 1" style="width: 150px" />
-                <img src="images/about/KIR3.jpg" alt="Organizational Image 2" style="width: 150px" />
-                <img src="images/about/KIR2.jpg" alt="Organizational Image 3" style="width: 150px" />
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <strong>Organisasi Kapmi Yogyakarta</strong><br />
-                <p>Member 2022</p>
-                <img src="images/about/K1.jpg" alt="Organizational Image 1" style="width: 150px" />
-                <img src="images/about/K2.jpg" alt="Organizational Image 2" style="width: 150px" />
-                <img src="images/about/K3.jpg" alt="Organizational Image 3" style="width: 150px" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Organization -->
+    <!-- Akhir Pendidikan -->
 
-    <!-- Training Experience -->
+    <!-- Pengalaman Pelatihan -->
     <section id="training" class="py-3">
-      <!-- Ganti py-5 menjadi py-3 -->
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-4">
           <div class="col">
-            <h2>Training Experience</h2>
+            <h2>Pelatihan</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <ul>
-              <li>
-                <strong>Workshop Artificial Intelligence (Sadasa.academy)</strong><br />
-                <p>Third Semester</p>
-                <img src="images/about/w1.jfif" alt="Training Image 1" style="width: 150px" />
-                <img src="images/about/w2.jfif" alt="Training Image 2" style="width: 150px" />
-                <img src="images/about/w3.png" alt="Training Image 3" style="width: 150px" />
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <strong>Studi Independent Artificial Intelligence for Jobs (Orbit Future Academy)</strong><br />
-                <p>Fifth Semester</p>
-                <img src="images/about/sp1.jfif" alt="Training Image 1" style="width: 150px" />
-                <img src="images/about/sp2.jfif" alt="Training Image 2" style="width: 150px" />
-                <img src="images/about/sp3.png" alt="Training Image 3" style="width: 150px" />
-              </li>
-            </ul>
 
-            <div class="container">
-              <div class="row text-center mb-3">
-                <div class="col">
-                  <h2>Additional Information</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <ul>
-                      <li><strong>Technical Skills:</strong> HTML, CSS, Java, JavaScript, PHP, SQL, Python</li>
-                      <li><strong>Soft Skills:</strong> Communication, Problem-solving, Teamwork, Adaptability</li>
-                      <li><strong>Languages:</strong> Indonesian (Native), English (Intermediate)</li>
-                      <li><strong>Hobby:</strong> listening to music, exploring various culinary experiences, and watching movies or drama </li>
-                    </li>
-                  </ul>
+        <!-- Hacktiv8 -->
+        <div class="mb-2">
+          <h4>Hacktiv8</h4>
+          <p>
+            <strong>IBM X Hacktiv8 Inisiatif Pengembangan Siswa Batch 1</strong><br />
+            <span class="tanggal">Mei 2025 - Juni 2025</span>
+          </p>
+          <div class="d-flex justify-content-start gap-3 flex-wrap">
+            <img src="images/about/Hacktiv81.png" alt="1" style="width: 150px" />
+            <img src="images/about/hacktiv82.png" alt="2" style="width: 150px" />
+          </div>
+        </div>
+
+        <!-- PT Orbit Ventura Indonesia -->
+        <div class="mb-4">
+          <h4>PT Orbit Ventura Indonesia</h4>
+          <p>
+            <strong>Studi Independent Artificial Intelligence for Jobs Batch 7</strong><br />
+            <span class="tanggal">Agustus 2024 - Desember 2024</span>
+          </p>
+          <div class="d-flex justify-content-start gap-3 flex-wrap">
+            <img src="images/about/sp1.jfif" alt="1" style="width: 150px" />
+            <img src="images/about/sp2.jfif" alt="2" style="width: 150px" />
+          </div>
+        </div>
+
+        <!-- Sadasa.academy -->
+        <div class="mb-2">
+          <h4>Sadasa.academy</h4>
+          <p>
+            <strong>Workshop Artificial Intelligence</strong><br />
+            <span class="tanggal">September 2023 - November 2023</span>
+          </p>
+          <div class="d-flex justify-content-start gap-3 flex-wrap">
+            <img src="images/about/w1.jfif" alt="1" style="width: 150px" />
+            <img src="images/about/w2.jfif" alt="2" style="width: 150px" />
           </div>
         </div>
       </div>
     </section>
-    
+    <!-- Akhir Pengalaman Pelatihan -->
+
+    <!-- Organisasi -->
+    <section id="organization" class="py-3">
+      <div class="container">
+        <div class="row text-center mb-1">
+          <div class="col">
+            <h2>Organisasi</h2>
+          </div>
+        </div>
+
+        <!-- MAN 1 Indramayu -->
+        <div class="mb-3">
+          <h4>MAN 1 Indramayu</h4>
+          <p>
+            <strong>KIR (Karya Ilmiah Remaja)</strong><br />
+
+            <span class="tanggal">Juli 2020 - Januari 2022</span>
+          </p>
+          <div class="d-flex justify-content-start gap-3 flex-wrap">
+            <img src="images/about/KIR.jpg" alt="1" style="width: 150px" />
+            <img src="images/about/KIR2.jpg" alt="2" style="width: 150px" />
+          </div>
+        </div>
+
+        <!-- Kapmi Yogyakarta -->
+        <div class="mb-2">
+          <h4>Kapmi Yogyakarta</h4>
+          <p>
+            <strong>Organisasi daerah mahasiswa asal Indramayu</strong><br />
+
+            <span class="tanggal">Oktober 2022 - Sekarang</span>
+          </p>
+          <div class="d-flex justify-content-start gap-3 flex-wrap">
+            <img src="images/about/K2.jpg" alt="2" style="width: 150px" />
+            <img src="images/about/K3.jpg" alt="3" style="width: 150px" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Organisasi -->
+
+    <!-- Informasi Tambahan -->
+    <section id="additional-info" class="py-3">
+      <div class="container">
+        <div class="row text-center mb-2">
+          <div class="col">
+            <h2>Informasi Tambahan</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul style="list-style-type: disc; padding-left: 20px">
+              <li><strong>Teknis</strong></li>
+              <ul style="list-style-type: none; padding-left: 15px">
+                <li>Bahasa Pemrograman: HTML, CSS, JavaScript, PHP (OOP), Python, Java.</li>
+                <li>Framework & Library: Flutter, Streamlit, Bootstrap.</li>
+                <li>Database: MySQL.</li>
+                <li>Alat & Platform: GitHub, Visual Studio Code, Android Studio, Anaconda, XAMPP, Microsoft Office (Word, Excel, PowerPoint).</li>
+              </ul>
+
+              <li><strong>Non-Teknis :</strong> Komunikasi, kerja sama tim, kreatif, adaptif, manajemen waktu, proaktif, disiplin.</li>
+              <li><strong>Bahasa :</strong> Bahasa Indonesia (Aktif), Bahasa Inggris (Menengah)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Informasi Tambahan -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
