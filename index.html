@@ -19,8 +19,8 @@
         text-align: center;
       }
       .jumbotron img {
-        width: 250px; /* diperbesar */
-        height: 250px; /* diperbesar */
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         border-radius: 5px;
         margin-bottom: 1rem;
@@ -41,18 +41,26 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: white">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigasi">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html" style="color: black">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html" style="color: black">Tentang</a></li>
-          <li class="nav-item"><a class="nav-link" href="tech.html" style="color: black">Teknologi</a></li>
-          <li class="nav-item"><a class="nav-link" href="certificate.html" style="color: black">Sertifikat</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html" style="color: black">Proyek</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html" style="color: black">Kontak</a></li>
-        </ul>
+      <div class="container">
+        <!-- (Opsional) Nama Brand -->
+        <a class="navbar-brand" href="#" style="color: black; font-weight: bold">RACHEL</a>
+
+        <!-- Tombol Toggle di kanan -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigasi">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html" style="color: black">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" style="color: black">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="tech.html" style="color: black">Teknologi</a></li>
+            <li class="nav-item"><a class="nav-link" href="certificate.html" style="color: black">Sertifikat</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html" style="color: black">Proyek</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" style="color: black">Kontak</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- Akhir Navbar -->
