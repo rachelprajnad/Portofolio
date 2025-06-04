@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Kontak - Rachel Prajna Duhita</title>
+    <title>RACHEL PRAJNA DUHITA</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .jumbotron {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 700px;
+        margin: 4rem auto;
+        text-align: center;
+      }
+      .jumbotron img {
+        width: 250px; /* diperbesar */
+        height: 250px; /* diperbesar */
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        color: black;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      p.lead {
+        font-size: 1.1rem;
+        color: black;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: white">
-      
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
-            <li class="nav-item"><a class="nav-link" href="tech.html">Teknologi</a></li>
-            <li class="nav-item"><a class="nav-link" href="certificate.html">Sertifikat</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Proyek</a></li>
-            <li class="nav-item"><a class="nav-link active" href="Contact.html">Kontak</a></li>
-          </ul>
-        </div>
-      </>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigasi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html" style="color: black">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" style="color: black">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="tech.html" style="color: black">Teknologi</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificate.html" style="color: black">Sertifikat</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html" style="color: black">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" style="color: black">Kontak</a></li>
+        </ul>
+      </div>
     </nav>
     <!-- Akhir Navbar -->
 
-    <!-- Bagian Info Kontak -->
-    <section class="container my-5 text-center">
-      <p class="mt-4">Untuk pertanyaan, silakan kirim email atau hubungi saya lewat WhatsApp dan Instagram.</p>
+    <!-- Konten Kontak -->
+    <main class="container my-5">
+      <section class="text-center">
+        <h2>Kontak Saya</h2>
+        <p>Untuk pertanyaan, silakan kirim email atau hubungi saya lewat WhatsApp dan Instagram.</p>
 
-      <!-- Link Email -->
-      <p>
-        <a href="mailto:rachelprajna04@gmail.com" class="text-decoration-none" style="font-size: 1.5rem; color: #007bff"> rachelprajna04@gmail.com </a>
-      </p>
+        <p>
+          <a href="mailto:rachelprajna04@gmail.com" class="email">rachelprajna04@gmail.com</a>
+        </p>
+        <p>
+          <a href="https://wa.me/6289526484368" target="_blank" rel="noopener" class="whatsapp">089526484368</a>
+        </p>
+        <p>
+          <a href="https://instagram.com/rachel_pduhita" target="_blank" rel="noopener" class="instagram">@rachel_pduhita</a>
+        </p>
+      </section>
+    </main>
 
-      <!-- Link WhatsApp -->
-      <p>
-        <a href="https://wa.me/089526484368" target="_blank" class="text-decoration-none" style="font-size: 1.5rem; color: #6f42c1"> 089526484368 </a>
-      </p>
-
-      <!-- Link Instagram -->
-      <p>
-        <a href="https://instagram.com/rachel_pduhita" target="_blank" class="text-decoration-none" style="font-size: 1.5rem; color: #c13584"> @rachel_pduhita </a>
-      </p>
-    </section>
-    <!-- Akhir Bagian Info Kontak -->
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

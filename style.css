@@ -13,16 +13,21 @@
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif; /* Font utama */
+  font-size: 1rem;
+  color: #333333;
 }
 
 /* Judul besar */
 .container h2 {
-  font-size: 2rem;
+  font-weight: 700; /* Bold */
+  font-size: 2.2rem; /* Ukuran lebih besar */
   color: #000000;
   margin-bottom: 0.8rem;
   text-align: left;
   border-bottom: 3px solid #000000;
   padding-bottom: 0.3rem;
+  font-variant-numeric: tabular-nums; /* Angka rata */
 }
 
 /* Section */
@@ -31,10 +36,12 @@
 }
 
 .section h3 {
+  font-weight: 600;
   font-size: 1.4rem;
   color: #333333;
   margin-bottom: 0.4rem;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Daftar bullet */
@@ -49,6 +56,8 @@
   font-size: 1.1rem;
   color: #555555;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  font-variant-numeric: proportional-nums; /* Angka proporsional */
   transition: color 0.3s ease;
 }
 
@@ -85,14 +94,6 @@
   font-style: italic;
 }
 
-/* MIPA dan Kir Kapmi */
-.mipa,
-.kir-kapmi {
-  font-size: 1.1rem;
-  color: #333333;
-  font-weight: bold;
-}
-
 /* Navbar */
 .navbar {
   background-color: #ffffff;
@@ -109,6 +110,7 @@
   color: #000000;
   padding: 0.5rem 1rem;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   transition: color 0.3s ease;
   margin-left: 0;
 }
@@ -121,6 +123,7 @@
 .nav-menu {
   font-size: 1rem;
   color: #000000;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Responsif untuk layar kecil */
@@ -130,7 +133,7 @@
   }
 
   .container h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .section h3 {

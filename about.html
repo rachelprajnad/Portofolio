@@ -3,216 +3,210 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
     <title>Tentang - Rachel Prajna Duhita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
-      /* CSS untuk membuat tanggal rata kanan */
-      .tanggal {
-        display: block;
-        text-align: right;
-        font-style: italic;
-        color: #555;
-        margin-top: 0.2rem;
-      }
-
-      /* Kecilkan ukuran teks umum */
       body {
         font-size: 14px;
+        background-color: #f8f9fa;
       }
 
-      /* Kecilkan ukuran heading */
       h2 {
-        font-size: 1.5rem; /* default Bootstrap biasanya 2rem, ini lebih kecil */
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #333;
       }
 
       h4 {
-        font-size: 1.2rem; /* default sekitar 1.5rem, ini lebih kecil */
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+
+      .tanggal {
+        font-style: italic;
+        color: #6c757d;
+        text-align: right;
+        margin-top: 0.1rem;
+      }
+
+      section {
+        background: white;
+        padding: 1.5rem 2rem;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      }
+
+      ul {
+        padding-left: 1.5rem;
+      }
+
+      ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .nav-link {
+        color: #000 !important;
+      }
+
+      .nav-link.active {
+        font-weight: 600;
+        color: #000 !important;
+      }
+
+      .image-group {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+      }
+
+      .image-group img {
+        width: 150px;
+        border-radius: 6px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
       }
     </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: white">
-      
+      <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
             <li class="nav-item"><a class="nav-link active" href="about.html">Tentang</a></li>
             <li class="nav-item"><a class="nav-link" href="tech.html">Teknologi</a></li>
             <li class="nav-item"><a class="nav-link" href="certificate.html">Sertifikat</a></li>
             <li class="nav-item"><a class="nav-link" href="projects.html">Proyek</a></li>
-            <li class="nav-item"><a class="nav-link" href="Contact.html">Kontak</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
 
-    <!-- Tentang Saya -->
-    <section id="about-me" class="py-3">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Tentang Saya</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <p>
-              Mahasiswi Informatika di Universitas Teknologi Digital Indonesia dengan antusiasme tinggi dalam bidang teknologi, khususnya pengembangan frontend dan machine learning. Berpengalaman dalam merancang antarmuka pengguna (UI) yang
-              responsif serta membangun model prediktif berbasis data. Berhasil meraih Top 3 di program Studi Independen AI for Jobs berkat kontribusi aktif dan kemampuan kolaborasi tim. Berkomitmen untuk terus belajar, berkembang, dan
-              menghadirkan solusi teknologi yang inovatif serta adaptif sesuai kebutuhan industri.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Tentang Saya -->
+    <!-- Konten Utama -->
+    <main class="container my-5">
+      <!-- Tentang Saya -->
+      <section id="about-me">
+        <h2>Tentang Saya</h2>
+        <p>
+          Mahasiswi Informatika semester 6 di Universitas Teknologi Digital Indonesia dengan antusiasme tinggi dalam bidang teknologi, khususnya pengembangan frontend dan machine learning. Berpengalaman dalam merancang antarmuka pengguna (UI) yang
+          responsif serta membangun model prediktif berbasis data. Berhasil meraih Top 3 di program Studi Independen AI for Jobs berkat kontribusi aktif dan kemampuan kolaborasi tim. Berkomitmen untuk terus belajar, berkembang, dan
+          menghadirkan solusi teknologi yang inovatif serta adaptif sesuai kebutuhan industri.
+        </p>
+      </section>
 
-    <!-- Pendidikan -->
-    <section id="education" class="py-3">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Pendidikan</h2>
-          </div>
-        </div>
+      <!-- Pendidikan -->
+      <section id="education">
+        <h2>Pendidikan</h2>
         <ul>
           <li>
-            <strong>Informatika</strong><br />
-            Universitas Teknologi Digital Indonesia, Yogyakarta<br />
+            <strong> Universitas Teknologi Digital Indonesia – Bantul, Yogyakarta</strong><br />
+            S1- Informatika - IPK 3.70 / 4.00 <br />
             <span class="tanggal">2022 - Sekarang</span>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <!-- Akhir Pendidikan -->
+      <!-- Pelatihan -->
+      <section id="training">
+        <h2>Pelatihan</h2>
 
-    <!-- Pengalaman Pelatihan -->
-    <section id="training" class="py-3">
-      <div class="container">
-        <div class="row text-center mb-4">
-          <div class="col">
-            <h2>Pelatihan</h2>
-          </div>
-        </div>
-
-        <!-- Hacktiv8 -->
-        <div class="mb-2">
+        <div class="mb-3">
           <h4>Hacktiv8</h4>
-          <p>
-            <strong>IBM X Hacktiv8 Inisiatif Pengembangan Siswa Batch 1</strong><br />
-            <span class="tanggal">Mei 2025 - Juni 2025</span>
-          </p>
-          <div class="d-flex justify-content-start gap-3 flex-wrap">
-            <img src="images/about/Hacktiv81.png" alt="1" style="width: 150px" />
-            <img src="images/about/hacktiv82.png" alt="2" style="width: 150px" />
+          <p><strong>IBM X Hacktiv8 Inisiatif Pengembangan Siswa Batch 1</strong><br /><span class="tanggal">Mei 2025 - Juni 2025</span></p>
+          <div class="image-group">
+            <img src="images/about/Hacktiv81.png" alt="Hacktiv8 Image 1" />
+            <img src="images/about/hacktiv82.png" alt="Hacktiv8 Image 2" />
           </div>
         </div>
 
-        <!-- PT Orbit Ventura Indonesia -->
-        <div class="mb-4">
+        <div class="mb-3">
           <h4>PT Orbit Ventura Indonesia</h4>
-          <p>
-            <strong>Studi Independent Artificial Intelligence for Jobs Batch 7</strong><br />
-            <span class="tanggal">Agustus 2024 - Desember 2024</span>
-          </p>
-          <div class="d-flex justify-content-start gap-3 flex-wrap">
-            <img src="images/about/sp1.jfif" alt="1" style="width: 150px" />
-            <img src="images/about/sp2.jfif" alt="2" style="width: 150px" />
+          <p><strong>Studi Independent Artificial Intelligence for Jobs Batch 7</strong><br /><span class="tanggal">Agustus 2024 - Desember 2024</span></p>
+          <div class="image-group">
+            <img src="images/about/sp1.jfif" alt="Orbit Image 1" />
+            <img src="images/about/sp2.jfif" alt="Orbit Image 2" />
           </div>
         </div>
 
-        <!-- Sadasa.academy -->
-        <div class="mb-2">
+        <div class="mb-3">
           <h4>Sadasa.academy</h4>
           <p>
             <strong>Workshop Artificial Intelligence</strong><br />
             <span class="tanggal">September 2023 - November 2023</span>
           </p>
-          <div class="d-flex justify-content-start gap-3 flex-wrap">
-            <img src="images/about/w1.jfif" alt="1" style="width: 150px" />
-            <img src="images/about/w2.jfif" alt="2" style="width: 150px" />
+          <div class="image-group">
+            <img src="images/about/w1.jfif" alt="Sadasa Image 1" />
+            <img src="images/about/w2.jfif" alt="Sadasa Image 2" />
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Akhir Pengalaman Pelatihan -->
+      </section>
 
-    <!-- Organisasi -->
-    <section id="organization" class="py-3">
-      <div class="container">
-        <div class="row text-center mb-1">
-          <div class="col">
-            <h2>Organisasi</h2>
-          </div>
-        </div>
+      <!-- Organisasi -->
+      <section id="organization">
+        <h2>Organisasi</h2>
 
-        <!-- MAN 1 Indramayu -->
         <div class="mb-3">
           <h4>MAN 1 Indramayu</h4>
           <p>
             <strong>KIR (Karya Ilmiah Remaja)</strong><br />
-
             <span class="tanggal">Juli 2020 - Januari 2022</span>
           </p>
-          <div class="d-flex justify-content-start gap-3 flex-wrap">
-            <img src="images/about/KIR.jpg" alt="1" style="width: 150px" />
-            <img src="images/about/KIR2.jpg" alt="2" style="width: 150px" />
+          <div class="image-group">
+            <img src="images/about/KIR.jpg" alt="KIR Image 1" />
+            <img src="images/about/KIR2.jpg" alt="KIR Image 2" />
           </div>
         </div>
 
-        <!-- Kapmi Yogyakarta -->
-        <div class="mb-2">
+        <div class="mb-3">
           <h4>Kapmi Yogyakarta</h4>
           <p>
             <strong>Organisasi daerah mahasiswa asal Indramayu</strong><br />
-
             <span class="tanggal">Oktober 2022 - Sekarang</span>
           </p>
-          <div class="d-flex justify-content-start gap-3 flex-wrap">
-            <img src="images/about/K2.jpg" alt="2" style="width: 150px" />
-            <img src="images/about/K3.jpg" alt="3" style="width: 150px" />
+          <div class="image-group">
+            <img src="images/about/K2.jpg" alt="Kapmi Image 1" />
+            <img src="images/about/K3.jpg" alt="Kapmi Image 2" />
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Akhir Organisasi -->
+      </section>
 
-    <!-- Informasi Tambahan -->
-    <section id="additional-info" class="py-3">
-      <div class="container">
-        <div class="row text-center mb-2">
-          <div class="col">
-            <h2>Informasi Tambahan</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <ul style="list-style-type: disc; padding-left: 20px">
-              <li><strong>Teknis</strong></li>
-              <ul style="list-style-type: none; padding-left: 15px">
-                <li>Bahasa Pemrograman: HTML, CSS, JavaScript, PHP (OOP), Python, Java.</li>
-                <li>Framework & Library: Flutter, Streamlit, Bootstrap.</li>
-                <li>Database: MySQL.</li>
-                <li>Alat & Platform: GitHub, Visual Studio Code, Android Studio, Anaconda, XAMPP, Microsoft Office (Word, Excel, PowerPoint).</li>
-              </ul>
+      <section id="additional-info" class="my-5">
+        <h2>Informasi Tambahan</h2>
 
-              <li><strong>Non-Teknis :</strong> Komunikasi, kerja sama tim, kreatif, adaptif, manajemen waktu, proaktif, disiplin.</li>
-              <li><strong>Bahasa :</strong> Bahasa Indonesia (Aktif), Bahasa Inggris (Menengah)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Informasi Tambahan -->
+        <h5>Teknis</h5>
+        <ul style="list-style-type: disc; padding-left: 1.5rem">
+          <li>Bahasa Pemrograman: HTML, CSS, JavaScript, PHP (OOP), Python, Java.</li>
+          <li>Framework & Library: Flutter, Streamlit, Bootstrap.</li>
+          <li>Database: MySQL.</li>
+          <li>Alat & Platform: GitHub, Visual Studio Code, Android Studio, Anaconda, XAMPP, Node.js, Docker, Microsoft Office (Word, Excel, PowerPoint).</li>
+        </ul>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <h5>Non-Teknis</h5>
+        <ul style="list-style-type: disc; padding-left: 1.5rem">
+          <li>Komunikasi, kerja sama tim, kreatif, adaptif, manajemen waktu, proaktif, disiplin.</li>
+        </ul>
+
+        <h5>Bahasa</h5>
+        <ul style="list-style-type: disc; padding-left: 1.5rem">
+          <li>Indonesia (Aktif)</li>
+          <li>Bahasa Inggris (Menengah)</li>
+        </ul>
+      </section>
+    </main>
+    <!-- ... konten HTML ... -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
   </body>
 </html>

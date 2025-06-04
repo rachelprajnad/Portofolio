@@ -4,23 +4,54 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Teknologi - Rachel Prajna Duhita</title>
+    <title>RACHEL PRAJNA DUHITA</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .jumbotron {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 700px;
+        margin: 4rem auto;
+        text-align: center;
+      }
+      .jumbotron img {
+        width: 250px; /* diperbesar */
+        height: 250px; /* diperbesar */
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        color: black;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      p.lead {
+        font-size: 1.1rem;
+        color: black;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: white">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigasi">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
-          <li class="nav-item"><a class="nav-link active" href="tech.html">Teknologi</a></li>
-          <li class="nav-item"><a class="nav-link" href="certificate.html">Sertifikat</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Proyek</a></li>
-          <li class="nav-item"><a class="nav-link" href="Contact.html">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html" style="color: black">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" style="color: black">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="tech.html" style="color: black">Teknologi</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificate.html" style="color: black">Sertifikat</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html" style="color: black">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" style="color: black">Kontak</a></li>
         </ul>
       </div>
     </nav>
@@ -60,9 +91,7 @@
         <!-- Akhir Bahasa Pemrograman -->
 
         <!-- Framework & Library -->
-        <div class="row">
-          <div class="row justify-content-start">
-
+        <div class="row justify-content-start mb-5">
           <h2 class="mb-4">Framework & Library</h2>
           <div class="col-6 col-sm-4 col-md-2 mb-4">
             <img src="images/Technologies/flutter.jpg" alt="Flutter" class="img-fluid" />
@@ -80,8 +109,7 @@
         <!-- Akhir Framework & Library -->
 
         <!-- Database -->
-        <div class="row">
-          <div class="row justify-content-start">
+        <div class="row justify-content-start mb-5">
           <h2 class="mb-4">Database</h2>
           <div class="col-6 col-sm-4 col-md-2 mb-4">
             <img src="images/Technologies/mysql.png" alt="MySQL" class="img-fluid" style="height: 80px" />
@@ -112,6 +140,16 @@
           <div class="col-6 col-sm-4 col-md-2 mb-4">
             <img src="images/Technologies/xampp.jpg" alt="XAMPP" class="img-fluid" style="height: 80px" />
             <p>XAMPP</p>
+          </div>
+          <!-- Tambahan Node.js -->
+          <div class="col-6 col-sm-4 col-md-2 mb-4">
+            <img src="images/Technologies/nodejs.png" alt="Node.js" class="img-fluid" style="height: 80px" />
+            <p>Node.js</p>
+          </div>
+          <!-- Tambahan Docker -->
+          <div class="col-6 col-sm-4 col-md-2 mb-4">
+            <img src="images/Technologies/docker.png" alt="Docker" class="img-fluid" style="height: 80px" />
+            <p>Docker</p>
           </div>
           <div class="col-6 col-sm-4 col-md-2 mb-4">
             <img src="images/Technologies/ms-office.png" alt="Microsoft Office" class="img-fluid" style="height: 80px" />
